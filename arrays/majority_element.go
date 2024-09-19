@@ -14,4 +14,4 @@ func majorityElement(nums []int) int {
         }
     }
     return m
-} // boyer-moore
+} // boyer-moore algorithm
