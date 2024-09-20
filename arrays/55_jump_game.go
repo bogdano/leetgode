@@ -13,3 +13,18 @@ func canJump(nums []int) bool {
     }
     return true
 }
+
+// alternative, slightly faster
+func canJump_alt(nums []int) bool {
+    goalPost := len(nums)-1
+    for i := len(nums)-1; i >= 0; i-- {
+        if i + nums[i] >= goalPost {
+            goalPost = i
+        }
+    }
+    if goalPost == 0 {
+        return true
+    } else {
+        return false
+    }
+}
