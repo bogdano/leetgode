@@ -1,4 +1,4 @@
-package two_pointers
+package sliding_window
 
 func minSubArrayLen(target int, nums []int) int {
     minLen := len(nums)+1 // set to invalid subarray length
